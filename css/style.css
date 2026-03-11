@@ -1,6 +1,14 @@
-/* Style for the header section
-**
-** Style for the header image and text */
+/*
+** Page Style
+*/
+body{
+    background-color: #f0f2f4;
+}
+
+/*
+** Style for the header section
+** Style for the header image and text
+*/
 .page-header{
     position: relative;
 }
@@ -15,7 +23,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-20%, -50%);
+    transform: translate(0%, -50%);
     text-align: left;
     color: #f0f2f4;
     font-family: 'Montsserat', sans-serif;
@@ -50,4 +58,46 @@
     color: #f0f2f4;
     text-decoration: none;
     font-weight: bold;
+}
+
+/*
+** Main body style
+** Style for the personal info section
+*/
+
+.personal-info{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.personal-info .text{
+    width: 80%;
+}
+
+.personal-info img{
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.personal-info h2{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #C22F34;
+}
+
+.personal-info p{
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+    text-align: left;
 }
