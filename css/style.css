@@ -9,52 +9,64 @@ body{
 ** Style for the header section
 ** Style for the header image and text
 */
-.page-header{
-    position: relative;
+
+.header{
+    display: grid;
+    width: 100%;
 }
 
-.page-header img{
+.header img{
+    grid-area: 1 / 1;
     width: 100%;
     height: auto;
-    display: block;
+    display: block; /* Idk what it is but it helps */
 }
 
 .header-text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(0%, -50%);
-    text-align: left;
+    /* Position of the header text inside the header box */
+    grid-area: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    transform: translateX(+50%); /* Move the text to the right to be starting at the middle of the image */
+
+    /* Style of the header text */
     color: #f0f2f4;
-    font-family: 'Montsserat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .header-text h1{
-    font-size: 2em;
-    padding-bottom: 9px;
+    /* Style of the h1 name text */
+    font-size: 3em;
     margin: 0;
 }
 
 .header-text h3{
+    /* Style of the h3 welcome text */
+    font-size: 1.2em;
+    margin: 5px 0 0 0;
+}
+
+.header nav{
+    /* Position of the nav bar inside the header box */
+    grid-area: 1 / 1;
+    justify-self: end;
+    align-self: start;
+    margin: 20px;
+
+    /* Style of the entire nav text */
+    font-family: 'Montserrat', sans-serif;
     font-size: 1em;
-    margin: 0;
 }
 
-.header-nav nav{
-    position: absolute;
-    top: 20px;
-    right: 40px;
-    z-index: 10;
-    font-family: 'Montsserat', sans-serif;
-}
-
-.header-nav ul{
+.header nav ul{
     display: flex;
     gap: 20px;
     list-style: none;
 }
 
-.header-nav nav a{
+.header nav a{
     color: #f0f2f4;
     text-decoration: none;
     font-weight: bold;
@@ -69,7 +81,7 @@ body{
     display: flex;
     align-items: flex-start;
     gap: 20px;
-    width: 90%;
+    width: 100%;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
@@ -86,7 +98,6 @@ body{
 .personal-info img{
     width: 80%;
     height: auto;
-    border-radius: 8px;
     align-self: center;
 }
 
