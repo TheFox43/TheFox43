@@ -90,35 +90,37 @@ body{
 */
 
 .info{
-    /* Position of the info box in the page */
+    /* Position and structure of the info box in the page */
     display: grid;
+    grid-template-columns: 1fr 1fr;
     width: 100%;
 
-    /* Style of the info box in its entirety */
-    margin: 20px 0px;
-    padding: 20px 0px;
+    /* Structure of the elements inside the info box */
+    gap: 5%;
+    align-items: center;
+    justify-items: center;
+
+    /* Style of the info box in the page */
+    margin: 2.5% 0%;
+    padding: 2.5% 0%;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .info img{
-    grid-area: 1 / 1;
-    width: 45%;
+    width: 90%;
     height: auto;
     align-self: center;
-    justify-self: start;
-    margin-left: 20px;    /* add desired left margin */
+    justify-self: center;
 }
 
 .info-text{
     /* Position of the header text inside the header box */
-    grid-area: 1 / 1;
     display: flex;
-    width: 45%;
+    width: 90%;
     flex-direction: column;
-    justify-self: flex-end;
     align-self: center;
-    margin-right: 20px;    /* add desired left margin */
+    justify-self: center;
 
     /* Style of the header text */
     font-family: 'Montserrat', sans-serif;
