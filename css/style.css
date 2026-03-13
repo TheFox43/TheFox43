@@ -7,7 +7,9 @@ body{
 }
 
 /*
-** Style for the header section
+**
+** Style for the home page
+**
 */
 
 /*
@@ -141,4 +143,103 @@ body{
     color: #d16d16;
     text-decoration: none;
     font-weight: bold;
+}
+
+/*
+** Responsive design for the personal info section: smartphones
+*/
+
+@media (max-width: 768px) {
+    .info {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .info img {
+        width: 80%;
+        height: auto;
+        grid-row: auto;
+    }
+}
+
+/*
+**
+** Style for the about page
+**
+*/
+
+.info-welcome{
+    /* Position and structure of the info box in the page */
+    width: 100%;
+    align-items: center;
+
+    /* Style of the info box in the page */
+    margin: 2% 0%;
+    padding: 2% 2%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+    /* Style of the header text */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.info-welcome h2{
+    font-size: 1.8em;
+    color: #d16d16;
+}
+
+.info-welcome p{
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+.edu{
+    /* Position and structure of the info box in the page */
+    width: 100%;
+    align-items: center;
+
+    /* Style of the info box in the page */
+    margin: 2% 0%;
+    padding: 2% 2%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+    /* Style of the header text */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.edu h2{
+    font-size: 1.8em;
+    color: #d16d16;
+}
+
+.edu h3{
+    font-size: 1.2em;
+    color: #021f45;
+}
+
+.work{
+    /* Position and structure of the info box in the page */
+    width: 100%;
+    align-items: center;
+
+    /* Style of the info box in the page */
+    margin: 2% 0%;
+    padding: 2% 2%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+    /* Style of the header text */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.work h2{
+    font-size: 1.8em;
+    color: #d16d16;
+}
+
+.work h3{
+    font-size: 1.2em;
+    color: #021f45;
 }
