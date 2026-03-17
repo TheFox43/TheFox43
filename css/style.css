@@ -467,7 +467,22 @@ footer nav a{
 
 footer p{
     color: #f0f2f4;
+    padding-inline: 30px;
     font-weight: bold;
     grid-column: 2 / 2;
     justify-self: center;
+}
+
+@media (max-width: 768px) {
+    footer nav ul{
+        gap: 20px;
+    }
+
+    footer nav a{
+        justify-self: start;
+    }
+
+    footer p{
+        justify-self: end;
+    }
 }
