@@ -432,3 +432,28 @@ body{
         text-align: center;
     }
 }
+
+/*
+**
+** Style for the footer
+**
+*/
+
+/* Style for the footer */
+footer{
+    background-color: #021f45;
+    color: #f0f2f4;
+    padding: 1%;
+}
+
+footer ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+footer a{
+    color: #f0f2f4;
+    text-decoration: none;
+    font-weight: bold;
+}
