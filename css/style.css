@@ -442,18 +442,32 @@ body{
 /* Style for the footer */
 footer{
     background-color: #021f45;
-    color: #f0f2f4;
-    padding: 1%;
+    padding: 2% 0%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Montserrat', sans-serif;
 }
 
-footer ul{
+footer nav{
+    grid-column: 1 / 1;
+    justify-self: center;
+}
+
+footer nav ul{
     display: flex;
-    gap: 20px;
+    gap: 30px;
     list-style: none;
 }
 
-footer a{
+footer nav a{
     color: #f0f2f4;
     text-decoration: none;
     font-weight: bold;
+}
+
+footer p{
+    color: #f0f2f4;
+    font-weight: bold;
+    grid-column: 2 / 2;
+    justify-self: center;
 }
