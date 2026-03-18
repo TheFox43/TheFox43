@@ -66,6 +66,26 @@ header h3{
 }
 
 /*
+** Responsive design for the personal info section: smartphones
+*/
+
+@media (max-width: 768px){
+    header img{
+        height: 240px;
+    }
+
+    header h1{
+        top: 25%;
+        left: 20%;
+    }
+
+    header h3{
+        top: 40%;
+        left: 15%;
+    }
+}
+
+/*
 ** Style for the footer
 */
 
@@ -121,29 +141,6 @@ footer p{
 ** Style for the index.html page
 **
 */
-
-/*
-** Responsive design for the personal info section: smartphones
-*/
-
-@media (max-width: 768px) {
-    .header nav{
-        font-size: 0.8em;
-    }
-
-    .header-text{
-        grid-template-columns: 1fr 1fr;
-        transform: translate(+50%, +25%);
-    }
-
-    .header-text h1{
-        font-size: 1.2em;
-    }
-
-    .header-text h3{
-        display: none;
-    }
-}
 
 /*
 ** Main body style
