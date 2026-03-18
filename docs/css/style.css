@@ -99,49 +99,46 @@ header h3{
 */
 
 footer{
-    background-color: #021f45;
-    padding: 2% 0%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    font-family: 'Montserrat', sans-serif;
-}
+    /* Position of the items inside */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
 
-footer nav{
-    grid-column: 1 / 1;
-    justify-self: center;
+    /* Dimensions of the footer */
+    width: 100%;
+    padding: 10px 0px;
+
+    /* Style of the footer box */
+    background-color: #021f45;
+    font-family: 'Montserrat', sans-serif;
 }
 
 footer nav ul{
     display: flex;
-    gap: 30px;
+    gap: 20px;
     list-style: none;
 }
 
-footer nav a{
+footer nav ul a,
+footer p,
+footer p a{
     color: #f0f2f4;
     text-decoration: none;
     font-weight: bold;
 }
 
 footer p{
-    color: #f0f2f4;
-    padding-inline: 30px;
-    font-weight: bold;
-    grid-column: 2 / 2;
-    justify-self: center;
+    padding-right: 40px;
 }
 
-@media (max-width: 768px) {
-    footer nav ul{
-        gap: 20px;
-    }
+/*
+** Responsive design for the footer
+*/
 
-    footer nav a{
-        justify-self: start;
-    }
-
+@media (max-width: 768px){
     footer p{
-        justify-self: end;
+        padding-right: 25px;
     }
 }
 
