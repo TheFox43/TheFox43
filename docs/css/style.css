@@ -171,7 +171,7 @@ footer p{
     margin: 2.5% 0%;
     padding: 2.5% 0%;
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 4px rgba(0,0,0,0.1);
 }
 
 .info img{
@@ -250,10 +250,10 @@ footer p{
     align-items: center;
 
     /* Style of the info box in the page */
-    margin: 2% 0%;
-    padding: 2% 0%;
+    margin: 20px 0;
+    padding: 10px 0;
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0px 5px 4px rgba(0,0,0,0.1);
 
     /* Style of the header text */
     font-family: 'Montserrat', sans-serif;
@@ -297,10 +297,10 @@ footer p{
     width: 100%;
 
     /* Style of the info box in the page */
-    margin: 2% 0%;
-    padding: 2% 0%;
+    margin: 20px 0;
+    padding: 10px 0;
     background-color: #fff;
-    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0px 5px 4px rgba(0,0,0,0.1);
 
     /* Style of the header text */
     font-family: 'Montserrat', sans-serif;
@@ -313,15 +313,20 @@ footer p{
 }
 
 .title{
+    /* Style of the box */
+    width: 95%;
+    border-radius: 8px;
+    justify-self: center;
+
+    /* Position of the items inside this box */
     display: grid;
-    width: 100%;
     grid-template-columns: 2fr 3fr;
 
     /* Style of the info box in the page */
-    margin: 5% 0%;
-    padding: 5% 0%;
+    margin: 20px 0;
+    padding: 10px 0;
     background-color: #f0f2f4;
-    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0px 5px 4px rgba(0,0,0,0.1);
 
     /* Style of the header text */
     font-family: 'Montserrat', sans-serif;
@@ -366,6 +371,7 @@ footer p{
     .title{
         grid-template-columns: 1fr;
         align-items: center;
+        padding: 15px 0;
     }
 
     .title p{
@@ -393,10 +399,10 @@ footer p{
     width: 100%;
 
     /* Style of the info box in the page */
-    margin: 2% 0%;
-    padding: 2% 0%;
+    margin: 20px 0;
+    padding: 10px 0;
     background-color: #fff;
-    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0px 5px 4px rgba(0,0,0,0.1);
 
     /* Style of the header text */
     font-family: 'Montserrat', sans-serif;
@@ -409,16 +415,20 @@ footer p{
 }
 
 .job{
+    /* Style of the box */
+    width: 95%;
+    border-radius: 8px;
+    justify-self: center;
+
     /* Position and structure of the info box in the page */
     display: grid;
-    width: 100%;
     grid-template-columns: 2fr 3fr;
 
     /* Style of the info box in the page */
-    margin: 5% 0%;
-    padding: 5% 0%;
+    margin: 20px 0;
+    padding: 10px 0;
     background-color: #f0f2f4;
-    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0px 5px 4px rgba(0,0,0,0.1);
 
     /* Style of the header text */
     font-family: 'Montserrat', sans-serif;
@@ -501,7 +511,7 @@ footer p{
     margin: 2% 0%;
     padding: 2% 0%;
     background-color: #fff;
-    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0px 5px 4px rgba(0,0,0,0.1);
 
     /* Style of the form text */
     font-family: 'Montserrat', sans-serif;
@@ -569,18 +579,16 @@ footer p{
 .maps{
     grid-column: 2;
     width: 100%;
-    max-width: 650px;
+    max-width: 750px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-self: center;
 }
 
 .maps iframe{
     width: 90%;
     height: 90%;
     min-height: 350px;
-    margin: 0 0;
-    padding: 20px 0 0 0;
     border-radius: 8px;
 }
 
