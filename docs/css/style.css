@@ -53,6 +53,7 @@ header h3{
     position: absolute;
     /* Style of the h1 name text */
     color: #f0f2f4;
+    white-space: nowrap;
 }
 
 header h1{
@@ -70,18 +71,26 @@ header h3{
 */
 
 @media (max-width: 768px){
+    header{
+        height: 220px;
+    }
+
     header img{
-        height: 240px;
+        height: 220px;
     }
 
     header h1{
         top: 25%;
-        left: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.8em;
     }
 
     header h3{
         top: 40%;
-        left: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.2em;
     }
 }
 
