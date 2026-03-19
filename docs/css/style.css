@@ -354,11 +354,27 @@ footer p{
 }
 
 .card-back{
+    display: flex;
+    flex-direction: column;
     border-radius: 8px;
     text-align: center;
     background: #021f45;
     color: #f0f2f4;
     transform: rotateY(180deg);
+}
+
+.bar{
+    width: 80%;
+    height: 12px;
+    background: #f0f2f4;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.fill{
+    height: 100%;
+    background: #d16d16;
+    border-radius: 8px;
 }
 
 /*
