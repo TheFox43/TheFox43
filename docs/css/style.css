@@ -28,8 +28,49 @@ header img{
     z-index: -1; /* Don't know, don't ask */
 }
 
+.menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #f0f2f4;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background: #d16d16;
+    color: white;
+}
+
+#menu-toggle{
+    display: block;
+    width: 20px;
+    background: #d16d16;
+    color: #f0f2f4;
+    padding: 10px 12px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    min-width: 150px;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown-content a {
+    background: #021f45;
+}
+
+/*
+
 header nav{
-    /* Position of the nav bar inside the header box */
     position: absolute;
     top: 20px;
     right: 50px;
@@ -49,22 +90,23 @@ header nav ul a{
     text-shadow: 2px 2px 5px black;
 }
 
+*/
+
 header h1,
 header h3{
     position: absolute;
-    /* Style of the h1 name text */
     color: #f0f2f4;
-    white-space: nowrap;
+    left: 50%;
 }
 
 header h1{
     top: 35%;
-    left: 50%;
+
 }
 
 header h3{
     top: 50%;
-    left: 50%;
+
 }
 
 /*
