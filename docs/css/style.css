@@ -362,9 +362,9 @@ footer p{
 }
 
 .card-back{
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
-    border-radius: 8px;
     text-align: center;
     background: #021f45;
     color: #f0f2f4;
@@ -668,7 +668,6 @@ footer p{
 .projects-info{
     /* Position and structure of the info box in the page */
     width: 100%;
-    align-items: center;
 
     /* Style of the info box in the page */
     margin: 20px 0;
@@ -695,9 +694,11 @@ footer p{
 
 .language{
     width: 100%;
+    margin: 20px 0;
+    padding: 10px 0;
     background-color: #fff;
 
-    /* Style of the info box in the page */
+    /* Style of the languages box in the page */
     margin: 20px 0;
     padding: 10px 0;
     background-color: #fff;
@@ -720,9 +721,71 @@ footer p{
     color: #333;
 }
 
-.project img{
-    height: 250px;
+.projects-list{
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px 0;
+
+    /* Position of the projects inside the box */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
+
+.project{
+    width: 500px;
+
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    justify-items: center;
+    align-items: center;
+    
+    /* Style of the languages box in the page */
+    margin: 20px 0;
+    padding: 10px 0;
+    background-color: #f0f2f4;
+    box-shadow: 0px 5px 4px rgba(0,0,0,0.1);
+}
+
+.project h3{
+    grid-column: 1 / 3;
+    padding-inline: 10%;
+    font-size: 1.5em;
+    color: #021f45;
+}
+
+.project a,
+.project img{
+    grid-column: 1;
+    padding-inline: 5%;
+    height: 220px;
+}
+
+.project p{
+    grid-column: 2;
+    padding-inline: 5%;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+/*
+** Responsive design for the contact form section: smartphones
+*/
+
+@media (max-width: 768px) {
+    .project{
+        width: 90%;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .project h3{
+        text-align: center;
+    }
+}
+
 
 #stay-tuned{
     font-size: 1.5em;
