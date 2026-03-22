@@ -434,14 +434,18 @@ footer p{
     font-family: 'Montserrat', sans-serif;
 }
 
-.info-welcome h2{
+.info-welcome h2,
+.info-welcome p{
     padding-inline: 5%;
+}
+
+.info-welcome h2{
     font-size: 1.8em;
     color: #d16d16;
 }
 
 .info-welcome p{
-    padding-inline: 5%;
+    text-align: justify;
     font-size: 1em;
     line-height: 1.6;
     color: #333;
@@ -453,13 +457,8 @@ footer p{
 
 @media (max-width: 768px) {
     .info-welcome h2{
-        text-align: center;
+        justify-self: center;
         font-size: 1.5em;
-    }
-
-    .info-welcome p{
-        text-align: center;
-        font-size: 1em;
     }
 }
 
@@ -548,16 +547,18 @@ footer p{
 
     .title{
         grid-template-columns: 1fr;
-        align-items: center;
         padding: 15px 0;
     }
 
     .title p{
-        text-align: center;
+        grid-column: 1;
+        text-align: justify;
+        align-self: center;
     }
 
     .school h3,
     .school h4{
+        align-self: center;
         text-align: center;
         margin: 0 0;
     }
@@ -648,17 +649,21 @@ footer p{
 
     .job{
         grid-template-columns: 1fr;
-        align-items: center;
+        padding: 15px 0;
     }
 
     .job p{
-        text-align: center;
+        grid-column: 1;
+        text-align: justify;
+        align-self: center;
     }
 
     .company h3,
     .company h4{
-        margin: 0 0;
+        align-self: center;
+        grid-column: 1;
         text-align: center;
+        margin: 0 0;
     }
 }
 
