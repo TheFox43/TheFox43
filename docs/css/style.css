@@ -544,13 +544,6 @@ footer p{
 */
 
 @media (max-width: 768px) {
-    .edu{
-        justify-items: center;
-        align-items: center;
-        justify-content: center;
-        align-content: center;
-    }
-
     .edu h2{
         text-align: center;
         font-size: 1.5em;
@@ -558,8 +551,6 @@ footer p{
 
     .title{
         width: 90%;
-        justify-self: center;
-        align-self: center;
         grid-template-columns: 1fr;
         padding: 15px 0;
     }
@@ -659,10 +650,6 @@ footer p{
 */
 
 @media (max-width: 768px) {
-    .work{
-        justify-items: center;
-    }
-
     .work h2{
         text-align: center;
         font-size: 1.5em;
@@ -670,8 +657,6 @@ footer p{
 
     .job{
         width: 90%;
-        justify-self: center;
-        align-self: center;
         grid-template-columns: 1fr;
         padding: 15px 0;
     }
