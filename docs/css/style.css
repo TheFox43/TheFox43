@@ -546,6 +546,9 @@ footer p{
 @media (max-width: 768px) {
     .edu{
         justify-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
     }
 
     .edu h2{
