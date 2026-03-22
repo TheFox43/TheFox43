@@ -469,8 +469,6 @@ footer p{
 .edu{
     /* Position and structure of the info box in the page */
     width: 100%;
-    align-items: center;
-    justify-content: center;
 
     /* Style of the info box in the page */
     margin: 20px 0;
@@ -551,6 +549,7 @@ footer p{
 
     .title{
         width: 90%;
+        justify-self: center;
         grid-template-columns: 1fr;
         padding: 15px 0;
     }
@@ -577,8 +576,6 @@ footer p{
 .work{
     /* Position and structure of the info box in the page */
     width: 100%;
-    align-items: center;
-    justify-content: center;
 
     /* Style of the info box in the page */
     margin: 20px 0;
@@ -602,6 +599,7 @@ footer p{
     border-radius: 8px;
     justify-self: center;
     align-self: center;
+    align-content: center;
 
     /* Position and structure of the info box in the page */
     display: grid;
@@ -658,6 +656,7 @@ footer p{
 
     .job{
         width: 90%;
+        justify-self: center;
         grid-template-columns: 1fr;
         padding: 15px 0;
     }
