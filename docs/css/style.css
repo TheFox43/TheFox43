@@ -471,8 +471,8 @@ footer p{
 .edu{
     /* Position and structure of the info box in the page */
     width: 100%;
-    align-items: center;
-    justify-content: center;
+    justify-items: center;
+    align-content: center;
 
     /* Style of the info box in the page */
     margin: 20px 0;
@@ -581,8 +581,8 @@ footer p{
 .work{
     /* Position and structure of the info box in the page */
     width: 100%;
-    align-items: center;
-    justify-content: center;
+    justify-items: center;
+    align-content: center;
 
     /* Style of the info box in the page */
     margin: 20px 0;
