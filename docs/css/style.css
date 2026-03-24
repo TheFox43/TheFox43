@@ -185,7 +185,7 @@ footer p{
 
 @media (max-width: 768px){
     footer p{
-        padding-right: 25px;
+        padding-right: 20px;
     }
 }
 
@@ -272,7 +272,6 @@ footer p{
     }
 
     .info img{
-        width: 80%;
         height: auto;
         max-width: 250px;
         grid-row: auto;
