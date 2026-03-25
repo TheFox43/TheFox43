@@ -21,13 +21,6 @@ main{
     width: 100%;
 }
 
-@media (prefers-color-scheme: dark){
-    body{
-        background-color: #080b27;
-        color: #ffffff;
-    }
-}
-
 /*
 ** Style for the header image and nav bar
 */
@@ -272,20 +265,6 @@ footer p{
     color: #d16d16;
     text-decoration: none;
     font-weight: bold;
-}
-
-/*
-** Dark theme mode
-*/
-
-@media (prefers-color-scheme: dark){
-    .info{
-        background-color: #080b27;
-    }
-
-    .info-text p{
-        color: #fff;
-    }
 }
 
 /*
