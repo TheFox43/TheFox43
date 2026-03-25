@@ -17,14 +17,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div class="header-main">
-            <img src="images/logo.png" alt="logo">
-            <div class="header-title">
-                <h1>Francesco Volpe</h1>
-                <h3>Back-end Student | Python, Flutter</h3>
-            </div>
-        </div>
+    <header id="secondary-header">
         <!-- Navbar with cross references -->
         <nav>
             <button class="menu-toggle" id="menu-toggle">
@@ -42,23 +35,33 @@
     </header>
 
     <main>
-        <div class="contact">
+        <div class="contacts">
             <h2>Connect with me!</h2>
-            <form action="https://formspree.io/f/xaqploan" method="POST" max-width=40% class="contact-form">
-                <label>
-                    Your email:
-                    <input type="email" name="email" required>
-                </label>
-                <label>
-                    Your message:
-                    <textarea name="message" required></textarea>
-                </label>
-                <button type="submit">Send</button>
-            </form>
-            <div class="maps">
-                <!-- Google Maps Embed -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2794.703056015019!2d11.619787315556!3d44.83535697909892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fddf0f3f0f0f1%3A0x2b0f0f0f0f0f0f0f!2sFerrara%2C%20Province%20of%20Ferrara%2C%20Italy!5e0!3m2!1sen!2sit!4v1710000000000!5m2!1sen!2sit" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt="google maps: ferrara">
-                </iframe>
+            <div class="contact-form">
+                <form action="https://formspree.io/f/xaqploan" method="POST" max-width=40%>
+                    <label>
+                        Your email:
+                        <input type="email" name="email" required>
+                    </label>
+                    <label>
+                        Your message:
+                        <textarea name="message" required></textarea>
+                    </label>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+
+            <div class="terminal">
+                <div class="header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <div class="body">
+                    <p><span class="prompt">fox43@pc:~$</span> ls</p>
+                    <p>file1.txt  progetto/  script.js</p>
+                    <p><span class="prompt">user@pc:~$</span> _</p>
+                </div>
             </div>
         </div>
     </main>

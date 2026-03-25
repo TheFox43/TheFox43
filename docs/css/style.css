@@ -44,6 +44,16 @@ header{
     font-family: 'Montserrat', sans-serif;
 }
 
+#secondary-header{
+    /* Position of the header box in the page */
+    width: 100%;
+    height: 50px;
+
+    display: grid;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .header-main{
     /* Dimensions */
     width: 720px;
@@ -194,7 +204,7 @@ footer{
     padding: 10px 0px;
 
     /* Style of the footer box */
-    background-color: #1A2CA3;
+    background-color: #021f45;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -441,7 +451,7 @@ footer p{
     display: flex;
     flex-direction: column;
     text-align: center;
-    background: #1A2CA3;
+    background: #021f45;
     color: #f0f2f4;
     transform: rotateY(180deg);
 }
@@ -500,15 +510,17 @@ footer p{
 
 .info-welcome{
     /* Position and structure of the info box in the page */
-    width: 95%;
+    width: 90%;
     justify-self: center;
     align-items: center;
 
     /* Style of the info box in the page */
     margin: 20px 0;
     padding: 10px 0;
-    background-color: #fff;
-    box-shadow: 0px 5px 4px rgba(0,0,0,0.1);
+
+    /* Border */
+    border-radius: 30px;
+    outline: 2px dashed #d16d16;
 
     /* Style of the header text */
     font-family: 'Montserrat', sans-serif;
@@ -528,7 +540,7 @@ footer p{
     text-align: justify;
     font-size: 1em;
     line-height: 1.6;
-    color: #333;
+    color: #c5c5c5;
 }
 
 /*
@@ -549,14 +561,16 @@ footer p{
 
 .edu{
     /* Position and structure of the info box in the page */
-    width: 95%;
+    width: 90%;
     justify-self: center;
 
     /* Style of the info box in the page */
     margin: 20px 0;
     padding: 10px 0;
-    background-color: #fff;
-    box-shadow: 0px 5px 4px rgba(0,0,0,0.1);
+
+    /* Border */
+    border-radius: 30px;
+    outline: 2px dashed #d16d16;
 
     /* Style of the header text */
     font-family: 'Montserrat', sans-serif;
@@ -570,7 +584,7 @@ footer p{
 
 .title{
     /* Style of the box */
-    width: 95%;
+    width: 90%;
     border-radius: 8px;
     justify-self: center;
     align-self: center;
@@ -582,7 +596,7 @@ footer p{
     /* Style of the info box in the page */
     margin: 20px auto;
     padding: 10px 0;
-    background-color: #f0f2f4;
+    background-color: #a3b3ca;
     box-shadow: 0px 5px 4px rgba(0,0,0,0.1);
 
     /* Style of the header text */
@@ -669,14 +683,16 @@ footer p{
 
 .work{
     /* Position and structure of the info box in the page */
-    width: 95%;
+    width: 90%;
     justify-self: center;
 
     /* Style of the info box in the page */
     margin: 20px 0;
     padding: 10px 0;
-    background-color: #fff;
-    box-shadow: 0px 5px 4px rgba(0,0,0,0.1);
+
+    /* Border */
+    border-radius: 30px;
+    outline: 2px dashed #d16d16;
 
     /* Style of the header text */
     font-family: 'Montserrat', sans-serif;
@@ -690,7 +706,7 @@ footer p{
 
 .job{
     /* Style of the box */
-    width: 95%;
+    width: 90%;
     border-radius: 8px;
     justify-self: center;
     align-self: center;
@@ -702,8 +718,7 @@ footer p{
     /* Style of the info box in the page */
     margin: 20px auto;
     padding: 10px 0;
-    background-color: #f0f2f4;
-    box-shadow: 0px 5px 4px rgba(0,0,0,0.1);
+    background-color: #a3b3ca;
 
     /* Style of the header text */
     font-family: 'Montserrat', sans-serif;
@@ -790,15 +805,17 @@ footer p{
 
 .languages{
     /* Position and structure of the info box in the page */
-    width: 95%;
+    width: 90%;
     justify-self: center;
     align-items: center;
 
     /* Style of the info box in the page */
     margin: 20px 0;
     padding: 10px 0;
-    background-color: #fff;
-    box-shadow: 0px 5px 4px rgba(0,0,0,0.1);
+
+    /* Border */
+    border-radius: 30px;
+    outline: 2px dashed #d16d16;
 
     /* Style of the header text */
     font-family: 'Montserrat', sans-serif;
@@ -823,7 +840,7 @@ footer p{
 
 .tongue{
     /* Style of the box */
-    width: 95%;
+    width: 90%;
     border-radius: 8px;
     justify-self: center;
     align-self: center;
@@ -835,7 +852,7 @@ footer p{
     /* Style of the info box in the page */
     margin: 20px auto;
     padding: 10px 0;
-    background-color: #f0f2f4;
+    background-color: #a3b3ca;
     box-shadow: 0px 5px 4px rgba(0,0,0,0.1);
 
     /* Style of the header text */
@@ -935,14 +952,16 @@ footer p{
 
 .projects-info{
     /* Position and structure of the info box in the page */
-    width: 95%;
+    width: 90%;
     justify-self: center;
 
     /* Style of the info box in the page */
     margin: 20px 0;
     padding: 10px 0;
-    background-color: #fff;
-    box-shadow: 0px 5px 4px rgba(0,0,0,0.1);
+
+    /* Border */
+    border-radius: 30px;
+    outline: 2px dashed #d16d16;
 
     /* Style of the header text */
     font-family: 'Montserrat', sans-serif;
@@ -959,22 +978,20 @@ footer p{
     text-align: justify;
     font-size: 1em;
     line-height: 1.6;
-    color: #333;
+    color: #c6c6c6;
 }
 
 .language{
-    width: 95%;
+    width: 90%;
     justify-self: center;
-    
-    margin: 20px auto;
-    padding: 10px 0;
-    background-color: #fff;
 
-    /* Style of the languages box in the page */
+    /* Style of the info box in the page */
     margin: 20px 0;
     padding: 10px 0;
-    background-color: #fff;
-    box-shadow: 0px 5px 4px rgba(0,0,0,0.1);
+
+    /* Border */
+    border-radius: 30px;
+    outline: 2px dashed #d16d16;
 
     /* Style of the header text */
     font-family: 'Montserrat', sans-serif;
@@ -990,16 +1007,13 @@ footer p{
     padding-inline: 5%;
     font-size: 1em;
     line-height: 1.6;
-    color: #333;
+    color: #c6c6c6;
     text-align: justify;
 }
 
 .projects-list{
-    width: 95%;
+    width: 90%;
     justify-self: center;
-
-    margin: 20px auto;
-    padding: 10px 0;
 
     /* Position of the projects inside the box */
     display: flex;
@@ -1020,8 +1034,8 @@ footer p{
     /* Style of the languages box in the page */
     margin: 20px 0;
     padding: 10px 0;
-    background-color: #f0f2f4;
-    box-shadow: 0px 5px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    background-color: #a3b3ca;
 }
 
 .project h3{
@@ -1109,8 +1123,14 @@ footer p{
     justify-self: center;
     background-color: #021f45;
     font-family: 'Montserrat', sans-serif;
-    border-radius: 8px;
+
+    /* Style of the info box in the page */
+    margin: 20px 0;
     padding: 10px 10px;
+
+    /* Border */
+    border-radius: 8px;
+    outline: 2px dashed #d16d16;
 }
 
 /*
@@ -1119,138 +1139,144 @@ footer p{
 **
 */
 
-/*
-** Style for the contact form section
-*/
-
-.contact{
-    /* Position and structure of the form box in the page */
-    width: 95%;
+.contacts{
+    width: 90%;
     justify-self: center;
+
     display: grid;
     grid-template-columns: 2fr 3fr;
 
-    /* Style of the form box in the page */
+    /* Style of the info box in the page */
     margin: 20px 0;
     padding: 10px 0;
-    background-color: #fff;
-    box-shadow: 0px 5px 4px rgba(0,0,0,0.1);
+
+    /* Border */
+    border-radius: 30px;
+    outline: 2px dashed #d16d16;
 
     /* Style of the form text */
     font-family: 'Montserrat', sans-serif;
 }
 
-.contact h2{
-    padding-inline: 10%;
+.contacts h2{
+    padding-inline: 5%;
     font-size: 1.8em;
     color: #d16d16;
 }
 
-.contact form{
-    grid-column: 1;
-    width: 95%;
+/*
+** Style for the contact form section
+*/
 
+.contact-form{
+    /* Position and structure of the form box in the page */
+    width: 90%;
+    grid-column: 1;
+    justify-self: center;
+    justify-content: center;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding-inline: 10%;
-    align-items: stretch;
+
+    /* Style of the form text */
+    font-family: 'Montserrat', sans-serif;
 }
 
-.contact form label{
+.contact-form form{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-form form label{
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-self: flex-start;
-    color: #021f45;
+    color: #c6c6c6;
     font-size: 1em;
 }
 
-.contact form label input{
+.contact-form form label input{
     width: 100%;
     min-width: 220px;
     padding: 5% 5%;
+    background-color: #c6c6c6;
     font-family: 'Montserrat', sans-serif;
-    border: 1px solid #021f45;
     border-radius: 8px;
 }
 
-.contact form label textarea{
+.contact-form form label textarea{
     width: 100%;
     min-width: 220px;
     min-height: 250px;
     margin: 10px 0;
     padding: 5% 5%;
+    background-color: #c6c6c6;
     font-family: 'Montserrat', sans-serif;
-    border: 1px solid #021f45;
     border-radius: 8px;
 }
 
-.contact form button{
+.contact-form form button{
     align-self: flex-start;
     padding: 10px 20px;
     background-color: #d16d16;
     color: #f0f2f4;
-    border: 1px solid #021f45;
     border-radius: 8px;
     font-weight: bold;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
 }
 
-.maps{
-    display: flex;
-    width: 95%;
-    max-width: 750px;
-    justify-content: center;
-    align-self: center;
+/*
+** Terminal look
+*/
+
+.terminal{
+    width: 90%;
+
 }
 
-.maps iframe{
-    width: 95%;
-    height: 90%;
-    min-height: 350px;
-    border-radius: 8px;
-}
 
 /*
 ** Responsive design for the contact form section: smartphones
 */
 
 @media (max-width: 768px) {
-    .contact{
+    .contact-form{
         grid-template-columns: 1fr;
         align-items: center;
     }
 
-    .contact h2{
+    .contact-form h2{
         text-align: center;
         font-size: 1.5em;
     }
 
-    .contact form{
+    .contact-form form{
         justify-self: center;
         align-self: center;
         align-items: center;
     }
 
-    .contact form label{
+    .contact-form form label{
         text-align: center;
         align-self: center;
         justify-self: center;
     }
 
-    .contact form label input{
+    .contact-form form label input{
         align-self: center;
         justify-self: center;
     }
 
-    .contact form label textarea{
+    .contact-form form label textarea{
         align-self: center;
         justify-self: center;
     }
 
-    .contact form button{
+    .contact-form form button{
         align-self: center;
     }
 
