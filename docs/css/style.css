@@ -1,5 +1,12 @@
 /*
 ** Gloabl Page Style
+**
+** Palette:
+** Terminal color(srgb 0.043137254901960784 0.054901960784313725 0.0784313725490196)
+** Blue #021f45
+** Dark Blue #090a1f
+** Ice #f0f2f4
+** Orange #d16d16
 */
 
 html, body{
@@ -8,7 +15,7 @@ html, body{
 }
 
 body{
-    background-color: #f0f2f4;
+    background-color: #090a1f;
 
     /* Put the footer down and use full page space */
     display: grid;
@@ -28,19 +35,50 @@ main{
 header{
     /* Position of the header box in the page */
     width: 100%;
-    height: 320px;
+    height: 380px;
+    margin-bottom: 50px;
+
+    display: grid;
     position: relative;
     font-family: 'Montserrat', sans-serif;
 }
 
-header img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 320px;
-    object-fit: cover;
-    z-index: -1; /* Don't know, don't ask */
+.header-main{
+    /* Dimensions */
+    width: 720px;
+    height: 280px;
+
+    /* Position */
+    align-self: flex-end;
+    justify-self: center;
+
+    /* Position objects inside the header-main box */
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 20px;
+
+    /* Border */
+    border-radius: 30px;
+    outline: 2px dashed #d16d16;
+}
+
+.header-main img{
+    grid-column: 1;
+    width: 220px;
+    justify-self: right;
+    align-self: center;
+}
+
+.header-title{
+    grid-column: 2;
+    align-self: center;
+    margin: 10px 20px;
+    padding: 10px 20px;
+
+    display: flex;
+    flex-direction: column;
+    
+    color: #f0f2f4;
 }
 
 header nav{
@@ -63,12 +101,11 @@ header nav{
 .menu a{
     color: #f0f2f4;
     font-weight: bold;
-    text-shadow: 2px 2px 4px black;
     text-decoration: none;
 }
 
-/* Hamburger button */
 .menu-toggle{
+    position: sticky;
     width: 50px;
     padding: 10px 0;
     display: none;
@@ -79,28 +116,37 @@ header nav{
     cursor: pointer;
 }
 
-header h1,
-header h3{
-    margin: 0;
-    padding: 10px 0;
-    color: #f0f2f4;
-    justify-self: center;
-    align-self: center;
-    transform: translate(+50%,+120px);
-    text-shadow: 2px 2px 4px black;
-}
-
 /*
 ** Responsive design for the personal info section: smartphones
 */
 
 @media (max-width: 768px){
     header{
-        height: 200px;
+        height: 580px;
     }
 
-    header img{
-        height: 200px;
+    .header-main{
+        width: 90%;
+        height: 440px;
+        
+        margin: 20px 0;
+        padding: 20px 0;
+
+        gap: 0;
+        grid-template-columns: 1fr;
+    }
+
+    .header-main img{
+        height: 180px;
+        width: 180px;
+        justify-self: center;
+    }
+
+    .header-title{
+        grid-column: 1;
+        margin: 0 0;
+        padding: 0 0;
+        text-align: center;
     }
 
     header nav{
@@ -128,22 +174,6 @@ header h3{
 
     .menu-toggle{
         display: block;
-    }
-
-    header h1,
-    header h3{
-        justify-self: center;
-        align-self: center;
-        text-align: center;
-        transform: translate(0, +60px);
-    }
-
-    header h1{
-        font-size: 1.8em;
-    }
-
-    header h3{
-        font-size: 1.2em;
     }
 }
 
@@ -224,8 +254,10 @@ footer p{
     /* Style of the info box in the page */
     margin: 20px 0;
     padding: 10px 0;
-    background-color: #fff;
-    box-shadow: 0 5px 4px rgba(0,0,0,0.1);
+
+    /* Border */
+    border-radius: 30px;
+    outline: 2px dashed #d16d16;
 }
 
 .info img{
@@ -258,7 +290,7 @@ footer p{
     text-align: justify;
     font-size: 1em;
     line-height: 1.6;
-    color: #333;
+    color: #f0f2f4;
 }
 
 .info-text p a{
@@ -315,8 +347,10 @@ footer p{
     /* Style of the skills box in the page */
     margin: 20px 0;
     padding: 10px 0;
-    background-color: #fff;
-    box-shadow: 0px 5px 4px rgba(0,0,0,0.1);
+    
+    /* Border */
+    border-radius: 30px;
+    outline: 2px dashed #d16d16;
 
     /* Style of the header text */
     font-family: 'Montserrat', sans-serif;
@@ -338,6 +372,7 @@ footer p{
     text-align: justify;
     padding-left: 5%;
     line-height: 1.6;
+    color: #f0f2f4;
 }
 
 .skill-cards{
