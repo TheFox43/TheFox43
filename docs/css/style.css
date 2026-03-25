@@ -5,6 +5,7 @@
 ** Terminal color(srgb 0.043137254901960784 0.054901960784313725 0.0784313725490196)
 ** Blue #021f45
 ** Dark Blue #090a1f
+** Another Blue #1A2CA3
 ** Ice #f0f2f4
 ** Orange #d16d16
 */
@@ -159,7 +160,7 @@ header nav{
         top: 40px;
         
         width: 100px;
-        background: #021f45;
+        background: #1A2CA3;
         
         flex-direction: column;
         align-items: flex-start;
@@ -193,7 +194,7 @@ footer{
     padding: 10px 0px;
 
     /* Style of the footer box */
-    background-color: #021f45;
+    background-color: #1A2CA3;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -243,7 +244,7 @@ footer p{
     /* Position and structure of the info box in the page */
     display: grid;
     grid-template-columns: 2fr 3fr;
-    width: 95%;
+    width: 90%;
     justify-self: center;
 
     /* Structure of the elements inside the info box */
@@ -261,7 +262,7 @@ footer p{
 }
 
 .info img{
-    width: 95%;
+    width: 90%;
     max-width: 320px;
     height: auto;
     padding: 15px 0;
@@ -272,7 +273,7 @@ footer p{
 .info-text{
     /* Position of the header text inside the header box */
     display: flex;
-    width: 95%;
+    width: 90%;
     flex-direction: column;
     align-self: center;
     justify-self: start;
@@ -338,7 +339,7 @@ footer p{
     /* Style inside of the skills box */
     display: grid;
     grid-template-columns: 2fr 3fr;
-    width: 95%;
+    width: 90%;
     justify-self: center;
     gap: 30px;
     align-items: center;
@@ -357,7 +358,7 @@ footer p{
 }
 
 .skills-intro{
-    width: 95%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -376,7 +377,7 @@ footer p{
 }
 
 .skill-cards{
-    width: 95%;
+    width: 90%;
     margin: 20px 0;
     padding: 10px 0;
 
@@ -440,7 +441,7 @@ footer p{
     display: flex;
     flex-direction: column;
     text-align: center;
-    background: #021f45;
+    background: #1A2CA3;
     color: #f0f2f4;
     transform: rotateY(180deg);
 }
