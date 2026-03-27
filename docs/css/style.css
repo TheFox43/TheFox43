@@ -496,6 +496,10 @@ footer img{
         padding: 0 0px;
         perspective: 1000px;
     }
+
+    .card:hover .card-inner {
+        transform: rotateY(180deg);
+    }
 }
 
 /*
@@ -1121,6 +1125,7 @@ footer img{
 
 @media (max-width: 768px){
     .contacts h2{
+        font-size: 1.5em;
         text-align: center;
     }
 }
