@@ -65,7 +65,7 @@
 }
 
 .social-link{
-    width: 240px;
+    width: 220px;
     padding: 5px;
     border-radius: var(--radius-sm);
     background-color: var(--color-primary);
@@ -83,4 +83,10 @@
 .social-link img{
     height: 30px;
     padding: 0 10px;
+}
+
+@media (max-width: 768px){
+    .social-links{
+        padding-left: 20px;
+    }
 }

@@ -46,6 +46,10 @@
 }
 
 @media (max-width: 768px){
+    .contact-form{
+        padding-left: 0;
+    }
+
     .contact-form button{
         width: 100%;
     }
