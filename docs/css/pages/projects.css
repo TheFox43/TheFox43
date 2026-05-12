@@ -4,174 +4,32 @@
 **
 */
 
-.projects-info{
-    /* Position and structure of the info box in the page */
-    width: 90%;
-    justify-self: center;
-
-    /* Style of the info box in the page */
-    padding: 10px 0;
-
-    /* Style of the header text */
-    font-family: 'Montserrat', sans-serif;
-}
-
-.projects-info h2{
-    padding-inline: 5%;
-    font-size: 1.8em;
-    color: #d16d16;
-}
-
-.projects-info p{
-    padding-inline: 5%;
-    text-align: justify;
-    font-size: 1em;
-    line-height: 1.6;
-    color: #c6c6c6;
-}
-
-.language{
-    width: 90%;
-    justify-self: center;
-
-    /* Style of the info box in the page */
-    padding: 10px 0;
-
-    /* Style of the header text */
-    font-family: 'Montserrat', sans-serif;
-}
-
-.language h2{
-    padding-inline: 5%;
-    color: #d16d16;
-    font-size: 1.8em;
-}
-
+.projects-info p,
 .language p{
-    padding-inline: 5%;
-    font-size: 1em;
-    line-height: 1.6;
-    color: #c6c6c6;
-    text-align: justify;
+    color: var(--color-text-muted-2);
 }
 
 .projects-list{
     width: 90%;
     justify-self: center;
-
-    /* Position of the projects inside the box */
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
 }
 
-.project{
-    width: 500px;
+#stay-tuned{
     justify-self: center;
-
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    justify-items: center;
-    align-items: center;
-    
-    /* Style of the languages box in the page */
     margin: 20px 0;
-    padding: 10px 0;
-    border-radius: 8px;
-    background-color: #a3b3ca;
-}
-
-.project h3{
-    grid-column: 1 / 5;
-    padding-inline: 5%;
+    padding: 10px;
+    border-radius: var(--radius-sm);
+    background-color: var(--color-primary);
+    color: var(--color-accent);
     font-size: 1.5em;
-    color: #021f45;
 }
-
-.project a,
-.project img{
-    grid-column: 1;
-    justify-self: center;
-    height: 220px;
-}
-
-.project p{
-    text-align: justify;
-    grid-column: 2;
-    padding-inline: 5%;
-    font-size: 1em;
-    line-height: 1.6;
-    color: #333;
-}
-
-/*
-** Minimal animations
-*/
-
-.project{
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project:hover{
-    transform: translateY(-5px);
-    box-shadow: 5px 20px 10px rgba(156, 156, 156, 0.15);
-}
-
-/*
-** Responsive design for the contact form section: smartphones
-*/
 
 @media (max-width: 768px){
-    .language h2{
-        font-size: 1.5em;
-        text-align: center;
-    }
-
-    .projects-info h2{
-        text-align: center;
-        font-size: 1.5em;
-    }
-
-    .projects-info p{
-        justify-self: center;
-    }
-
     .projects-list{
         gap: 0;
     }
-
-    .project{
-        width: 95%;
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .project h3{
-        font-size: 1.2em;
-        text-align: center;
-    }
-
-    .project h3,
-    .project a,
-    .project img,
-    .project p{
-        grid-column: 1;
-    }
-}
-
-
-#stay-tuned{
-    font-size: 1.5em;
-    color: #d16d16;
-    justify-self: center;
-    background-color: #021f45;
-    font-family: 'Montserrat', sans-serif;
-
-    /* Style of the info box in the page */
-    margin: 20px 0;
-    padding: 10px 10px;
-
-    /* Border */
-    border-radius: 8px;
 }

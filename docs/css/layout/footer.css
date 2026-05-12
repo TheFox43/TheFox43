@@ -3,24 +3,20 @@
 */
 
 footer{
-    /* Dimensions of the footer */
     width: 100%;
     padding: 20px 0;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    /* Style of the footer box */
-    background-color: #050514;
-    font-family: 'Montserrat', sans-serif;
+    background-color: var(--color-deep-bg);
 }
 
 footer nav ul{
     display: flex;
     gap: 40px;
     list-style: none;
-    margin: 0 0;
-    padding: 0 0;
+    margin: 0;
+    padding: 0;
 }
 
 footer img{

@@ -3,37 +3,26 @@
 */
 
 header{
-    /* Position of the header box in the page */
     width: 100%;
     height: 380px;
     margin-bottom: 50px;
-
     display: grid;
     position: relative;
-    font-family: 'Montserrat', sans-serif;
 }
 
 #secondary-header{
-    /* Position of the header box in the page */
     width: 100%;
     height: 60px;
     margin-bottom: 30px;
-
     display: grid;
     position: relative;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .header-main{
-    /* Dimensions */
     width: 720px;
     height: 280px;
-
-    /* Position */
     align-self: flex-end;
     justify-self: center;
-
-    /* Position objects inside the header-main box */
     display: grid;
     grid-template-columns: 2fr 3fr;
     gap: 20px;
@@ -51,11 +40,9 @@ header{
     align-self: center;
     margin: 10px 20px;
     padding: 10px 20px;
-
     display: flex;
     flex-direction: column;
-    
-    color: #f0f2f4;
+    color: var(--color-text-light);
 }
 
 header nav{
@@ -65,8 +52,7 @@ header nav{
     gap: 30px;
     z-index: 1000;
     align-items: center;
-    color: #f0f2f4;
-    font-family: 'Montserrat', sans-serif;
+    color: var(--color-text-light);
 }
 
 .menu{
@@ -76,7 +62,7 @@ header nav{
 }
 
 .menu a{
-    color: #f0f2f4;
+    color: var(--color-text-light);
     font-weight: bold;
     text-decoration: none;
 }
@@ -84,21 +70,16 @@ header nav{
 .menu-toggle{
     position: sticky;
     justify-self: center;
-
     width: 60px;
     padding: 7px 0;
     display: none;
     font-size: 2em;
-    background: #d16d16;
+    background: var(--color-accent);
     border: none;
-    border-radius: 8px;
-    color: #f0f2f4;
+    border-radius: var(--radius-sm);
+    color: var(--color-text-light);
     cursor: pointer;
 }
-
-/*
-** Responsive design for the personal info section: smartphones
-*/
 
 @media (max-width: 768px){
     header{
@@ -108,24 +89,22 @@ header nav{
     .header-main{
         width: 90%;
         height: 440px;
-        
         margin: 20px 0;
         padding: 20px 0;
-
         gap: 0;
         grid-template-columns: 1fr;
     }
 
     .header-main img{
-        height: 180px;
         width: 180px;
+        height: 180px;
         justify-self: center;
     }
 
     .header-title{
         grid-column: 1;
-        margin: 0 0;
-        padding: 0 0;
+        margin: 0;
+        padding: 0;
         text-align: center;
     }
 
@@ -137,19 +116,16 @@ header nav{
     .menu{
         position: absolute;
         top: 40px;
-        
         width: 100px;
-        border-radius: 8px;
-        background: #021f45;
-        
+        padding: 20px;
+        border-radius: var(--radius-sm);
+        background: var(--color-primary);
         flex-direction: column;
         align-items: flex-start;
-        padding: 20px;
-        
         display: none;
     }
 
-    .menu.active{
+    .menu.is-open{
         display: flex;
     }
 
