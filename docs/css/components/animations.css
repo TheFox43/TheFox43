@@ -1,0 +1,8 @@
+.hover-lift{
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.hover-lift:hover{
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover-light);
+}

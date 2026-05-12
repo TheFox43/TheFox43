@@ -17,10 +17,20 @@
 /* Import of the global styles for the whole Portfolio */
 @import url("base/variables.css");
 @import url("base/global.css");
+@import url("base/typography.css");
 
 /* Import of the styles for the header and footer */
 @import url("layout/header.css");
 @import url("layout/footer.css");
+
+/* Import of the styles for the small components */
+@import url("components/sections.css");
+@import url("components/cards.css");
+@import url("components/flip-cards.css");
+@import url("components/progress-bars.css");
+@import url("components/terminal.css");
+@import url("components/forms.css");
+@import url("components/animations.css");
 
 /* Import of the styles for the single pages */
 @import url("pages/home.css");

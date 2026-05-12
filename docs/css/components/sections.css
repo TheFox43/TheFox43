@@ -1,0 +1,33 @@
+.section{
+    width: var(--container-width);
+    justify-self: center;
+    padding: 10px 0;
+}
+
+.section h2,
+.section p{
+    padding-inline: 5%;
+}
+
+.section p{
+    text-align: justify;
+}
+
+.section-grid{
+    width: var(--container-width);
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 30px;
+    align-items: center;
+    justify-items: center;
+    margin: 20px 0;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px){
+    .section-grid{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
